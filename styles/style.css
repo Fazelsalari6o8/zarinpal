@@ -55,3 +55,40 @@ header {
     width: 8px;
     margin-right: 8px;
 }
+
+
+/* start responsive */
+/* max-width 1200px */
+@media (max-width: 1999px) {
+    header {
+        width: 940px;
+    }
+}
+
+/* max-width 992px */
+@media (max-width: 991px) {
+    header {
+        width: auto;
+        padding: 20px 60px;
+    }
+    .logo {
+        margin: 0;
+    }
+    .header-ul li {
+        margin: 0 10px;
+    }
+    .header-ul > li:last-child {
+        display: none;
+    }
+}
+
+/* max-width 768px */
+@media (max-width: 767px) {
+    header {
+        width: auto;
+        padding: 10px 8px;
+    }
+    .header-ul {
+        display: none;
+    }
+}
