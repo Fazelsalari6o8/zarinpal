@@ -53,6 +53,7 @@ header {
 }
 .more-menu {
     display: flex;
+    cursor: pointer;
 }
 .more-menu img {
     width: 8px;
