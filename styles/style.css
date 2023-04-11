@@ -59,6 +59,68 @@ header {
     width: 8px;
     margin-right: 8px;
 }
+#show-product-menu {
+    position: relative;
+}
+.product-menu {
+    position: absolute;
+    top: 0;
+    left: -210px;
+    background-color: #ffffff;
+    display: none;
+    justify-content: flex-start;
+    width: 421px;
+    border-top: 5px solid #f8e88b;
+    border-radius: 12px;
+    padding-top: 5px;
+    margin-top: 23px;
+}
+.product-menu a p:first-child {
+    color: #000000;
+    font-size: 0.9rem;
+}
+.product-menu a p:first-child:hover {
+    color: #28457b;
+}
+.product-menu a p:last-child {
+    color: #000000;
+    font-size: 0.7rem;
+}
+.product-menu a {
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.product-menu a:hover {
+    background-color: rgba(232, 239, 254, 0.6);
+}
+
+#show-more-menu {
+    position: relative;
+}
+#show-more-menu ul {
+    position: absolute;
+    top: 0;
+    left: -35px;
+    background-color: #ffffff;
+    display: none;
+    border-top: 5px solid #f8e88b;
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-top: 23px;
+    list-style: none;
+    width: 123px;
+}
+#show-more-menu li {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    color: #000000;
+}
+#show-more-menu li:hover {
+    background-color: rgba(232, 239, 254, 0.6);
+}
 
 .hamburger-icon {
     width: 27px;
@@ -122,6 +184,8 @@ header {
     animation: fadeInDown 0.25s forwards;
     /* transform: translateY(0); */
 }
+
+/* start keyframes */
 @keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -132,6 +196,16 @@ header {
         transform: translateY(0);
     }
 }
+
+@keyframes showUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* end keyframes */
 
 /* start responsive */
 /* max-width 1200px */
@@ -171,3 +245,4 @@ header {
         display: block;
     }
 }
+/* end responsive */
