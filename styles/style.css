@@ -207,6 +207,7 @@ header {
     font-size: 1.15rem;
     margin: 25px 0;
     line-height: 2.5rem;
+    letter-spacing: 0.5px;
 }
 
 .banner-button {
@@ -283,6 +284,14 @@ header {
     header {
         width: 940px;
     }
+
+    .banner {
+        width: 940px;
+        padding: 60px 40px 120px;
+    }
+    .banner-image img {
+        width: 430px;
+    }
 }
 
 /* max-width 992px */
@@ -300,6 +309,27 @@ header {
     .header-ul > li:last-child {
         display: none;
     }
+
+    .banner {
+        width: auto;
+        padding: 40px 40px 85px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .banner-image img {
+        display: none;
+    }
+    .banner-text {
+        text-align: center;
+    }
+    .banner-text p {
+        margin: 5px 0;
+        font-size: 1rem;
+        letter-spacing: -0.5px;
+    }
+    .banner-button {
+        margin-top: 40px;
+    }
 }
 
 /* max-width 768px */
@@ -313,6 +343,22 @@ header {
     }
     .hamburger-icon {
         display: block;
+    }
+
+    .banner {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+/* max-width 576px */
+@media (max-width: 575px) {
+    .banner {
+        padding: 80px 40px;
+    }
+    .banner-text h3 {
+        font-size: 1.2rem;
+        text-align: right;
     }
 }
 /* end responsive */
