@@ -16,6 +16,7 @@ header {
     padding: 21px 0 7px;
     background-color: rgba(255, 255, 255, 0.72);
     backdrop-filter: blur(20px);
+    z-index: 1000;
 
     position: sticky;
     top: 0;
@@ -253,8 +254,76 @@ header {
     width: 15px;
     position: relative;
     top: -60px;
+    cursor: pointer;
 }
 /* end banner */
+
+/* start online payment */
+.online-payment {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.section-image {
+    width: 450px;
+    height: 480px;
+}
+
+.section-text {
+    margin: 30px 0;
+    width: 530px;
+}
+.section-text h2 {
+    color: #747480;
+    font: 500 1.4rem 'YekanBakhMedium';
+    margin: 20px 0 5px;
+}
+.section-text h3 {
+    color: #303030;
+    font: 600 2rem 'YekanBakhHeavy';
+    margin: 5px 0 10px;
+}
+.section-text p {
+    color: #303030;
+    font-family: 'YekanBakhMedium';
+    text-align: justify;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    border-bottom: 1px solid #dfe1e4;
+    padding-bottom: 20px;
+    margin-top: 16px;
+}
+
+.section-links {
+    margin-top: 40px;
+    display: flex;
+}
+.section-links .first-button, .second-button {
+    font: normal 0.9rem 'iranyekanwebmedium';
+    padding: 6px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.section-links .first-button {
+    color: #000000;
+    background-color: #ffd900;
+    margin-left: 10px;
+}
+.section-links .second-button {
+    color: #28457b;
+    background-color: rgba(232, 239, 254, 0.6);
+    display: flex;
+    align-items: center;
+}
+.section-links .second-button img {
+    width: 18px;
+    height: 15px;
+    margin-right: 5px;
+}
+/* end online payment */
 
 /* start keyframes */
 @keyframes fadeInDown {
@@ -281,12 +350,11 @@ header {
 /* start responsive */
 /* max-width 1200px */
 @media (max-width: 1199px) {
-    header {
+    header, .banner, .online-payment {
         width: 940px;
     }
 
     .banner {
-        width: 940px;
         padding: 60px 40px 120px;
     }
     .banner-image img {
@@ -330,6 +398,15 @@ header {
     .banner-button {
         margin-top: 40px;
     }
+
+    .online-payment {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-text {
+        width: 95%;
+    }
 }
 
 /* max-width 768px */
@@ -349,6 +426,12 @@ header {
         margin-left: 8px;
         margin-right: 8px;
     }
+
+    .section-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* max-width 576px */
@@ -359,6 +442,18 @@ header {
     .banner-text h3 {
         font-size: 1.2rem;
         text-align: right;
+    }
+
+    .online-payment .section-image {
+        display: none;
+    }
+
+    .section-text {
+        width: 80%;
+        padding: 0 10px;
+    }
+    .section-text h3 {
+        font-size: 1.5rem;
     }
 }
 /* end responsive */
