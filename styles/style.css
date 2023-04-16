@@ -338,6 +338,7 @@ header {
     background-color: rgba(232, 239, 254, 0.6);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .section-links .second-button img {
     width: 18px;
