@@ -268,8 +268,29 @@ header {
 }
 
 .section-image {
-    width: 450px;
-    height: 480px;
+    width: 463px;
+    height: 483px;
+}
+.social-image {
+    width: 680px;
+    height: 530px;
+}
+.zarin-card-image {
+    width: 408px;
+    height: 266px;
+    position: relative;
+    top: 60px;
+}
+.payout-image {
+    width: 596px;
+    height: 400px;
+}
+.zarin-plus-image {
+    width: 577px;
+    height: 290px;
+    position: relative;
+    top: 50px;
+    left: 65px;
 }
 
 .section-text {
@@ -301,7 +322,7 @@ header {
     margin-top: 40px;
     display: flex;
 }
-.section-links .first-button, .second-button {
+.section-links .first-button, .section-links .second-button {
     font: normal 0.9rem 'iranyekanwebmedium';
     padding: 6px 14px;
     border-radius: 10px;
@@ -360,6 +381,26 @@ header {
     .banner-image img {
         width: 430px;
     }
+
+    .section-image {
+        width: 502px;
+        height: 518px;
+    }
+    .social-image {
+        width: 500px;
+        height: 423px;
+    }
+    .zarin-card-image {
+        width: 408px;
+        height: 266px;
+        position: relative;
+        top: 50px;
+        left: 15px;
+    }
+    .zarin-plus-image {
+        width: 462px;
+        height: 290px;
+    }
 }
 
 /* max-width 992px */
@@ -407,6 +448,26 @@ header {
     .section-text {
         width: 95%;
     }
+    .section-image {
+        width: 463px;
+        height: 483px;
+    }
+    .social-image {
+        width: 557px;
+        height: 480px;
+    }
+    .zarin-card-image {
+        width: 420px;
+        height: 274px;
+    }
+    .payout-image {
+        width: 556px;
+        height: 400px;
+    }
+    .zarin-plus-image {
+        width: 556px;
+        height: 290px;
+    }
 }
 
 /* max-width 768px */
@@ -432,6 +493,21 @@ header {
         flex-direction: column;
         align-items: center;
     }
+    .section-image {
+        width: 463px;
+        height: 543px;
+    }
+    .social-image {
+        width: 452px;
+        height: 423px;
+    }
+    .zarin-card-image {
+        width: 417px;
+        height: 383px;
+    }
+    .online-payment .payout-image, .online-payment .zarin-plus-image {
+        display: none;
+    }
 }
 
 /* max-width 576px */
@@ -454,6 +530,20 @@ header {
     }
     .section-text h3 {
         font-size: 1.5rem;
+    }
+}
+
+/* max width 482px */
+@media (max-width: 481px) {
+    .section-links {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-links .first-button {
+        margin: 17px 0 0 10px;
+    }
+    .section-links .second-button {
+        margin: 20px 0 0 10px;
     }
 }
 /* end responsive */
