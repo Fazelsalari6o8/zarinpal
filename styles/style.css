@@ -347,6 +347,69 @@ header {
 }
 /* end online payment */
 
+/* start attributes */
+.attributes {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #303030;
+}
+
+.defination {
+    width: 35%;
+    margin-top: 50px;
+}
+.defination h3 {
+    font: normal 2rem 'YekanBakhHeavy';
+}
+.defination p {
+    width: 85%;
+    font: normal 1rem/40px 'YekanBakhMedium';
+    margin-top: 48px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.items {
+    width: 60%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.items img {
+    width: 60px;
+    height: 60px;
+}
+.items .item {
+    padding: 18px 25px 20px 0;
+}
+.items .item div {
+    display: flex;
+    align-items: center;
+}
+.items .item h4 {
+    font: normal 1.5rem 'YekanBakhHeavy';
+    margin-right: 20px;
+}
+.items .item p {
+    font: normal 1rem/36px 'YekanBakhMedium';
+}
+
+.first-item {
+    border-left: 1px solid #e0e4e7;
+}
+.second-item {
+    border-bottom: 1px solid #e0e4e7;
+}
+.third-item {
+    border-top: 1px solid #e0e4e7;
+}
+.fourth-item {
+    border-right: 1px solid #e0e4e7;
+}
+/* end attributes */
+
 /* start keyframes */
 @keyframes fadeInDown {
     0% {
