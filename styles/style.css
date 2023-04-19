@@ -399,14 +399,13 @@ header {
 .first-item {
     border-left: 1px solid #e0e4e7;
 }
-.second-item {
-    border-bottom: 1px solid #e0e4e7;
-}
 .third-item {
     border-top: 1px solid #e0e4e7;
+    border-left: 1px solid #e0e4e7;
 }
 .fourth-item {
     border-right: 1px solid #e0e4e7;
+    border-top: 1px solid #e0e4e7;
 }
 /* end attributes */
 
