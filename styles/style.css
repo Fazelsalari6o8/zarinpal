@@ -464,6 +464,33 @@ header {
         width: 462px;
         height: 290px;
     }
+
+    .attributes {
+        width: 924px;
+        padding: 0 8px;
+        flex-direction: column;
+    }
+    .defination {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .defination p {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .first-item,
+    .second-item,
+    .third-item,
+    .fourth-item {
+        border: none;
+    }
+    .items {
+        width: 90%;
+        padding: 0 30px;
+    }
+    .items .item {
+        padding: 18px 0 20px 50px;
+    }
 }
 
 /* max-width 992px */
@@ -530,6 +557,16 @@ header {
     .zarin-plus-image {
         width: 556px;
         height: 290px;
+        left: 0;
+    }
+
+    .attributes {
+        width: auto;
+        padding: 0 35px;
+    }
+
+    .items {
+        margin: 80px 0;
     }
 }
 
@@ -571,6 +608,21 @@ header {
     .online-payment .payout-image, .online-payment .zarin-plus-image {
         display: none;
     }
+
+    .defination {
+        text-align: center;
+        margin-top: 90px;
+    }
+    .defination h3 {
+        font-size: 1.6rem;
+    }
+    .items {
+        width: 100%;
+        padding: 50px 0;
+    }
+    .items .item {
+        padding: 18px 0 20px 20px;
+    }
 }
 
 /* max-width 576px */
@@ -593,6 +645,14 @@ header {
     }
     .section-text h3 {
         font-size: 1.5rem;
+    }
+
+    .items {
+        padding: 50px 0;
+        grid-template-columns: 1fr;
+    }
+    .items .item {
+        padding: 18px 0;
     }
 }
 
