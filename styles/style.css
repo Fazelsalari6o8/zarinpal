@@ -409,6 +409,41 @@ header {
 }
 /* end attributes */
 
+/* start start-box */
+.start-box {
+    width: 1170px;
+    height: 220px;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid silver;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-box h4 {
+    font: normal 1.7rem 'YekanBakhHeavy';
+    color: #303030;
+}
+.start-box p {
+    font: normal 1.35rem 'YekanBakhMedium';
+    color: #747480;
+    margin-top: 10px;
+}
+.start-box a {
+    text-decoration: none;
+    font: normal 0.9rem/28px 'iranyekanwebmedium';
+    min-height: 28px;
+    padding: 4px 14px;
+    margin: 17px 0 0 10px;
+    background-color: #ffd900;
+    color: #000000;
+    border-radius: 10px;
+}
+/* end start-box */
+
 /* start keyframes */
 @keyframes fadeInDown {
     0% {
@@ -434,7 +469,7 @@ header {
 /* start responsive */
 /* max-width 1200px */
 @media (max-width: 1199px) {
-    header, .banner, .online-payment {
+    header, .banner, .online-payment, .start-box {
         width: 940px;
     }
 
@@ -568,6 +603,11 @@ header {
     .items {
         margin: 80px 0;
     }
+
+    .start-box {
+        margin: 0 38px;
+        width: calc(100% - 76px);
+    }
 }
 
 /* max-width 768px */
@@ -623,6 +663,11 @@ header {
     .items .item {
         padding: 18px 0 20px 20px;
     }
+
+    .start-box {
+        margin: 0 8px;
+        width: calc(100% - 16px);
+    }
 }
 
 /* max-width 576px */
@@ -654,6 +699,16 @@ header {
     .items .item {
         padding: 18px 0;
     }
+
+    .start-box {
+        height: 180px;
+    }
+    .start-box h4 {
+        font-size: 1.2rem;
+    }
+    .start-box p {
+        font-size: 1rem;
+    }
 }
 
 /* max width 482px */
@@ -667,6 +722,13 @@ header {
     }
     .section-links .second-button {
         margin: 20px 0 0 10px;
+    }
+
+    .start-box h4 {
+        font-size: 1rem;
+    }
+    .start-box p {
+        font-size: 0.8rem;
     }
 }
 /* end responsive */
