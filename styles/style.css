@@ -444,6 +444,42 @@ header {
 }
 /* end start-box */
 
+/* start support */
+.support {
+    width: 1170px;
+    height: 70px;
+    padding: 0 30px;
+    margin: 50px auto;
+    background-color: #fbf6f1;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.support-number {
+    font: normal 20px 'YekanBakhHeavy';
+    color: #303030;
+}
+.line {
+    margin: 0 20px;
+}
+.phone-number {
+    color: #21254e;
+    margin-right: 10px;
+}
+
+.support-request a {
+    display: flex;
+    color: #21254e;
+    font: 22px 'YekanBakhBold';
+    text-decoration: none;
+}
+.support-request img {
+    width: 20px;
+    margin-right: 10px;
+}
+/* end support */
+
 /* start keyframes */
 @keyframes fadeInDown {
     0% {
@@ -469,7 +505,7 @@ header {
 /* start responsive */
 /* max-width 1200px */
 @media (max-width: 1199px) {
-    header, .banner, .online-payment, .start-box {
+    header, .banner, .online-payment, .start-box, .support {
         width: 940px;
     }
 
@@ -525,6 +561,16 @@ header {
     }
     .items .item {
         padding: 18px 0 20px 50px;
+    }
+
+    .support-number {
+        font-size: 14px;
+    }
+    .phone-number {
+        font-size: 24px;
+    }
+    .support-request a {
+        font-size: 18px;
     }
 }
 
@@ -607,6 +653,30 @@ header {
     .start-box {
         margin: 0 38px;
         width: calc(100% - 76px);
+    }
+
+    .support {
+        flex-direction: column;
+        align-items: start;
+        margin: 40px 0 10px;
+        padding: 0 30px;
+        width: calc(100% - 60px);
+        background: none;
+    }
+    .support-number, .phone-number, .support-request a {
+        font-size: 19px;
+    }
+    .support-number {
+        padding: 0 20px;
+    }
+    .support-request {
+        margin: 19px 0;
+        background-color: #fbf6f1;
+        border-radius: 35px;
+        padding: 0 20px;
+    }
+    .support-request a {
+        margin: 5px 0;
     }
 }
 
@@ -709,6 +779,20 @@ header {
     .start-box p {
         font-size: 1rem;
     }
+
+    .support-number, .support-request a {
+        font-size: 14px;
+    }
+    .phone-number {
+        font-size: 16px;
+    }
+    .line {
+        display: none;
+    }
+    .support-number p {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* max width 482px */
@@ -729,6 +813,14 @@ header {
     }
     .start-box p {
         font-size: 0.8rem;
+    }
+
+    .support {
+        width: 100%;
+        margin: 14px 0;
+    }
+    .phone-number {
+        font-size: 14px;
     }
 }
 /* end responsive */
