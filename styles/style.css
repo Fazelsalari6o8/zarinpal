@@ -574,7 +574,7 @@ footer p:hover {
 /* start responsive */
 /* max-width 1200px */
 @media (max-width: 1199px) {
-    header, .banner, .online-payment, .start-box, .support {
+    header, .banner, .online-payment, .start-box, .support, footer {
         width: 940px;
     }
 
@@ -747,6 +747,18 @@ footer p:hover {
     .support-request a {
         margin: 5px 0;
     }
+
+    footer {
+        margin-top: 60px;
+        flex-direction: column;
+        width: calc(100% - 60px);
+    }
+    .footer-links {
+        width: 100%;
+    }
+    .social-media {
+        padding: 0 10px;
+    }
 }
 
 /* max-width 768px */
@@ -807,6 +819,11 @@ footer p:hover {
         margin: 0 8px;
         width: calc(100% - 16px);
     }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
 }
 
 /* max-width 576px */
@@ -861,6 +878,27 @@ footer p:hover {
     .support-number p {
         display: flex;
         flex-direction: column;
+    }
+
+    .footer-links p, .footer-links a, .social-media p {
+        font-size: 0.9rem;
+    }
+    .social-media {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-media a {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        margin-right: 10px;
+    }
+    .social-media img {
+        width: 18px;
+        height: 18px;
     }
 }
 
