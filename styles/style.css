@@ -540,6 +540,12 @@ footer p:hover {
     align-items: center;
     border-radius: 10px;
     margin-left: 15px;
+    padding: 20px;
+
+    transition: all 0.2s ease-in-out;
+}
+.social-media a:hover {
+    background: none;
 }
 /* end footer */
 
