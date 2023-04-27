@@ -480,6 +480,69 @@ header {
 }
 /* end support */
 
+/* start footer */
+footer {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+footer p {
+    transition: all 0.2s ease-in-out;
+}
+footer p:hover {
+    color: #284B83;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: calc(100% - 330px);
+    margin-bottom: 50px;
+    padding: 0 10px;
+}
+.footer-links p {
+    font: 1.3rem 'YekanBakhHeavy';
+    color: #303030;
+    margin-bottom: 15px;
+}
+.footer-links ul {
+    list-style: none;
+}
+.footer-links li {
+    padding: 8px 0;
+}
+.footer-links a {
+    text-decoration: none;
+    font: 1rem 'iranyekanwebmedium';
+    color: #000000;
+}
+
+.social-media {
+    width: 330px;
+    padding: 0 30px;
+    margin-bottom: 100px;
+}
+.social-media p {
+    font: 1.3rem 'YekanBakhHeavy';
+    color: #303030;
+}
+.social-media div {
+    display: flex;
+    margin-top: 20px;
+}
+.social-media a {
+    background-color: #eff4fe;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+/* end footer */
+
 /* start keyframes */
 @keyframes fadeInDown {
     0% {
