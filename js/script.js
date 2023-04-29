@@ -3,6 +3,8 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 const crossIcon = document.querySelector('.cross-icon-image');
 const showMoreMenu = document.querySelector('#show-more-menu');
 const showProductMenu = document.querySelector('#show-product-menu');
+const bell = document.querySelector('.bell');
+const bellTitle = document.querySelector('.bell-title');
 
 hamburgerIcon.addEventListener('click', function () {
   console.log(hamburgerMenu.style.transform);
@@ -33,4 +35,12 @@ showProductMenu.addEventListener('mouseenter', function (e) {
 showProductMenu.addEventListener('mouseleave', function (e) {
   const div = e.target.childNodes[5];
   div.style.display = 'none';
+});
+
+bell.addEventListener('mouseenter', function () {
+  bellTitle.style.display = 'block'
+});
+
+bell.addEventListener('mouseleave', function () {
+  bellTitle.style.display = 'none';
 });
