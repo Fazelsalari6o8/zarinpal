@@ -549,6 +549,36 @@ footer p:hover {
 }
 /* end footer */
 
+/* start bell */
+.bell {
+    background-color: #2e82ff;
+    width: fit-content;
+    padding: 7px 7px 0;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+.bell img {
+    width: 30px;
+    cursor: pointer;
+}
+.bell-title {
+    background-color: #0000009c;
+    color: #eeeeee;
+    width: fit-content;
+    padding: 15px 10px;
+    font: 0.9rem 'YekanBakhHeavy';
+    word-spacing: -0.1rem;
+    border-radius: 35px;
+    user-select: none;
+    position: fixed;
+    bottom: 20px;
+    left: 70px;
+    display: none;
+}
+/* end bell */
+
 /* start keyframes */
 @keyframes fadeInDown {
     0% {
